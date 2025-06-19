@@ -234,36 +234,6 @@ El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja*
 ### 18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. 
 
 
-```java
-public class Moneda {
-    // Atributos
-    final String codigo;      // Código ISO de la moneda (ej: "USD", "EUR")
-    final String nombre;      // Nombre completo (ej: "Dólar Estadounidense")
-    double tipoCambio;        // Valor de cambio respecto a la moneda base
-    int cantidadDisponible;   // Billetes/monedas físicos disponibles
-    
-    // Constructor
-    public Moneda(String codigo, String nombre, double tipoCambio, int cantidad) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.tipoCambio = tipoCambio;
-        this.cantidadDisponible = cantidad;
-    }
-    
-    // Métodos clave
-    public void actualizarTipoCambio(double nuevoCambio) {
-        this.tipoCambio = nuevoCambio;
-    }
-    
-    public void registrarTransaccion(int cantidadOperada) {
-        this.cantidadDisponible += cantidadOperada;
-    }
-    
-    public double convertir(double monto, Moneda destino) {
-        return monto * (this.tipoCambio / destino.tipoCambio);
-    }
-}
-```
 
 #### Atributos
 
