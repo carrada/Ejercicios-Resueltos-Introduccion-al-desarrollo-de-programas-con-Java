@@ -2,13 +2,13 @@
 
 ---
 
-#### **1. ¿Qué ventajas tiene hacer un diseño antes de codificar?**  
+### **1. ¿Qué ventajas tiene hacer un diseño antes de codificar?**  
 **Respuesta:**  
 La ventaja principal es que permite trazar un plan claro, definiendo **qué** se va a hacer, **cómo** se hará y estableciendo una estructura básica. Esto mejora la organización y evita improvisaciones durante la codificación.  
 
 ---
 
-#### **2. ¿Cuáles son los tres pasos en la metodología de diseño?**  
+### **2. ¿Cuáles son los tres pasos en la metodología de diseño?**  
 **Respuesta:**  
 1. **Encontrar los objetos principales** (sustantivos en la descripción del problema).  
 2. **Identificar el comportamiento deseado** (responsabilidades de las clases, usando verbos).  
@@ -17,14 +17,14 @@ La ventaja principal es que permite trazar un plan claro, definiendo **qué** se
 
 ---
 
-#### **3. ¿Qué es una clase?**  
+### **3. ¿Qué es una clase?**  
 **Respuesta:**  
 Es un **molde** a partir del cual se crean objetos, definiendo su estructura (atributos) y comportamiento (métodos).  
 *(Cita textual: página 5 del PDF)*.  
 
 ---
 
-#### **4. ¿Cuál es la relación entre clase y objeto?**  
+### **4. ¿Cuál es la relación entre clase y objeto?**  
 **Respuesta:**  
 - **Clase:** Molde abstracto que define propiedades y acciones.  
 - **Objeto:** Instancia concreta de una clase, con un estado único.  
