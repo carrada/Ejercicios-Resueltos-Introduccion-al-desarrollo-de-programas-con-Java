@@ -22,8 +22,6 @@ Los archivos en esta carpeta incluyen:
 ## 🗂 Archivos
 
 📄 respuestas-capitulo-1.md
-📄 apuntes-personales.txt
-
 
 > 💬 No hay código en esta carpeta, ya que el capítulo 1 está enfocado principalmente en aspectos teóricos y contexto introductorio.
 
