@@ -286,11 +286,39 @@ cantidadOperada es positivo para depósitos, negativo para retiros.
 **convertir**  
 → Lógica para convertir un monto entre monedas según tipo de cambio.
 
+---
 
+### **19. ¿Qué clase se necesita para un programa de juego de dados y cómo sería su diseño?**
 
+Una posible clase necesaria para este programa es la clase `Dado`.
 
+##### Clase `Dado`
 
-19. **Juego de Dados**:  
-   - Identificar una clase necesaria para el juego (ej. `Dado` o `Jugador`) y definir su estructura y comportamiento.  
+La clase `Dado` representa un dado físico que puede ser lanzado para obtener un valor entre 1 y 6.
 
-20. Escribir el escenario principal (algoritmo) para el juego de dados descrito en el ejercicio 19.  
+##### Atributos:
+- **valor**: representa el número que quedó en la cara superior después de lanzar el dado.
+
+##### Comportamiento:
+- **lanzar**: simula el lanzamiento del dado generando un número aleatorio del 1 al 6.
+- **getValor**: permite consultar el número que salió en el último lanzamiento.
+
+Además, se podría definir una clase `JuegoDados` encargada de controlar el flujo del juego, lanzar los dados, evaluar las condiciones de victoria o derrota y mostrar los resultados.
+
+---
+
+### **20. ¿Cuál sería el algoritmo principal para el juego de dados?**
+
+##### Escenario principal del juego:
+
+1. El jugador lanza dos dados.
+2. Se suman los valores obtenidos en los dados.
+3. Si la suma es 7 u 11, el jugador **gana** inmediatamente.
+4. Si la suma es 2, 3 o 12, el jugador **pierde** inmediatamente.
+5. Si la suma es 4, 5, 6, 8, 9 o 10, esa suma se convierte en los **puntos del jugador**.
+6. El jugador lanza de nuevo los dados:
+   - Si la nueva suma es **7**, el jugador **gana**.
+   - Si la nueva suma más los puntos anteriores da **11**, también **gana**.
+   - En cualquier otro caso, el jugador **pierde**.
+
+Este algoritmo refleja el flujo principal del juego según las reglas descritas.
