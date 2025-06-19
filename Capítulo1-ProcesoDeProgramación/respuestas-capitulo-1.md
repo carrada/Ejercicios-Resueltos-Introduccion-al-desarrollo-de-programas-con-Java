@@ -111,7 +111,6 @@ Se realiza desde que se empieza a escribir el código, siguiendo una cronología
 
 ### **16. ¿Definir estructura y comportamiento para objetos de las siguientes clases?**
 
---
 
 #### **Clase Alumno**
 
@@ -130,7 +129,7 @@ double promedio;           // Decimal para cálculos dinámicos (ej: 8.5)
 - `numeroDeCuenta` y `nombre` son `final` porque son datos invariables.  
 - `promedio` es `double` para precisión en cálculos matemáticos.
 
----
+
 
 #### **Clase Automóvil**
 
@@ -151,7 +150,7 @@ final int añoFabricacion;   // Entero inmutable (ej: 2020)
 - `kilometraje` y `precio` son `double` para manejar valores fraccionarios.  
 - `placa` es `String` porque puede incluir letras y guiones.
 
----
+
 
 #### **Clase Cuenta Bancaria**
 
@@ -166,7 +165,7 @@ double saldo;               // Decimal para transacciones (ej: 1500.75)
 - `depositar(double monto)`: Aumenta el saldo.  
 - `retirar(double monto)`: Reduce el saldo (con validación).
 
----
+
 
 #### **Clase Teléfono Celular**
 
@@ -182,7 +181,7 @@ double bateriaPorcentaje;   // Decimal para precisión (ej: 87.5)
 - `cargarBateria()`: Incrementa `bateriaPorcentaje`.  
 - `usarAplicacion()`: Reduce `bateriaPorcentaje`.
 
----
+
 
 #### **Clase Computadora**
 
