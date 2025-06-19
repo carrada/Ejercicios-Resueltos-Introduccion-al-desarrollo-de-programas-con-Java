@@ -32,7 +32,7 @@ Ejemplo: La clase `Auto` define atributos como `motor`; un objeto sería `autoDe
 
 ---
 
-#### **5. Dar tres ejemplos de clases y un par de objetos de cada clase.**  
+### **5. Dar tres ejemplos de clases y un par de objetos de cada clase.**  
 **Respuesta:**  
 | **Clase**       | **Objetos**               |  
 |-----------------|---------------------------|  
@@ -44,44 +44,44 @@ Ejemplo: La clase `Auto` define atributos como `motor`; un objeto sería `autoDe
 
 ---
 
-#### **6. ¿La estructura y el estado de dos objetos de la misma clase son siempre iguales? ¿Por qué?**  
+### **6. ¿La estructura y el estado de dos objetos de la misma clase son siempre iguales? ¿Por qué?**  
 **Respuesta:**  
 No. La **estructura** (atributos) es idéntica, pero el **estado** (valores de los atributos) varía. Ejemplo: Dos objetos `Contacto` tienen los mismos atributos (`nombre`, `teléfono`), pero uno puede ser `nombre: "Ana"` y otro `nombre: "Carlos"`.  
 
 ---
 
-#### **7. ¿Cuál es la importancia del *bytecode* de Java?**  
+### **7. ¿Cuál es la importancia del *bytecode* de Java?**  
 **Respuesta:**  
 El *bytecode* es el código intermedio que genera el compilador de Java. Permite que los programas sean **portables** y ejecutables en cualquier dispositivo con una JVM, sin recompilación.  
 
 ---
 
-#### **8. ¿Qué significa que un programa sea portable?**  
+### **8. ¿Qué significa que un programa sea portable?**  
 **Respuesta:**  
 Que puede ejecutarse en diferentes sistemas operativos o hardware **sin modificaciones**, gracias a la JVM.  
 
 ---
 
-#### **9. ¿Cuál es el objetivo de la JVM?**  
+### **9. ¿Cuál es el objetivo de la JVM?**  
 **Respuesta:**  
 Ejecutar programas Java interpretando el *bytecode*, actuando como una capa entre el código y el sistema operativo.  
 
 ---
 
-#### **10. ¿Cómo se ejecuta un programa originalmente escrito en Java?**  
+### **10. ¿Cómo se ejecuta un programa originalmente escrito en Java?**  
 **Respuesta:**  
 1. Se compila a *bytecode* (archivo `.class`).  
 2. La JVM interpreta y ejecuta el *bytecode*.  
 
 ---
 
-#### **11. ¿Qué es un paquete en Java?**  
+### **11. ¿Qué es un paquete en Java?**  
 **Respuesta:**  
 Un conjunto de clases e interfaces agrupadas por funcionalidad (ejemplo: `java.io` para entrada/salida).  
 
 ---
 
-#### **12. ¿Qué tipo de errores se pueden tener en un programa?**  
+### **12. ¿Qué tipo de errores se pueden tener en un programa?**  
 **Respuesta:**  
 - **Errores de sintaxis:** Violan reglas del lenguaje.  
 - **Errores de ligado:** Faltan bibliotecas o clases.  
@@ -89,13 +89,13 @@ Un conjunto de clases e interfaces agrupadas por funcionalidad (ejemplo: `java.i
 
 ---
 
-#### **13. ¿Cómo se pueden detectar los errores en la lógica del programa?**  
+### **13. ¿Cómo se pueden detectar los errores en la lógica del programa?**  
 **Respuesta:**  
 Mediante **pruebas de escritorio**: simular la ejecución línea por línea con datos de ejemplo, o imprimir valores intermedios para verificar el flujo.  
 
 ---
 
-#### **14. Especificar los tipos de mantenimiento que existen.**  
+### **14. Especificar los tipos de mantenimiento que existen.**  
 **Respuesta:**  
 - **Correctivo:** Corrige errores post-implementación.  
 - **Adaptativo:** Añade funcionalidades o ajusta el programa a nuevos requerimientos.  
@@ -201,8 +201,7 @@ double temperaturaCPU;      // Decimal (ej: 65.3)
 ---
 
 
-#### **Problemas Prácticos**  
-17. Utilizando la metodología presentada, escribir un algoritmo para el funcionamiento de una caja de una máquina de refrescos.  
+###  17. Utilizando la metodología presentada, escribir un algoritmo para el funcionamiento de una caja de una máquina de refrescos.  
 
 
 Para empezar necesitamos encontrar sustantivos que serviran para definir las clases, podríamos definir clases como Máquina, que representa toda la lógica del sistema; Caja, encargada del manejo de dinero; Refresco y Producto, que modelan lo que se vende; Usuario, que representa al cliente que interactúa con la máquina; Transacción, para registrar cada compra; Inventario, que controla las existencias; Pantalla y Botón, como interfaces físicas de interacción; Ranura, donde se inserta el dinero; Moneda y Billete, como tipos de dinero; Cambio, que modela el vuelto que se entrega; Mensaje, que comunica acciones al usuario; Opción y Selección, para representar elecciones del cliente; Precio, como parte del producto; Estado, que indica en qué parte del proceso está la máquina; Reembolso, por si se devuelve el dinero; y Error, para manejar situaciones inesperadas.
@@ -214,16 +213,16 @@ los verbos que identifique fueron: introducir, actualizar, mostrar, hacer, verif
 
 Ahora para terminar hay que determinar la colaboración entre objetos mediante escenarios
 
-## Escenario: Compra exitosa de un refresco
+#### Escenario: Compra exitosa de un refresco
 
-### Objetivo
+#### Objetivo
 El usuario compra un refresco insertando dinero exacto y seleccionando el producto.
 
-### Colaboración entre objetos
+#### Colaboración entre objetos
 
 El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja**. La **Caja** actualiza el saldo interno y notifica el nuevo monto disponible a la **Pantalla**, que muestra las opciones de productos con sus precios. Luego, el **Usuario** hace una selección desde la **Pantalla** (o mediante un **Botón**). La **Máquina** recibe esa selección y consulta al **Inventario** si el producto está disponible, y a la **Caja** si el saldo es suficiente. Si todo es correcto, la **Caja** autoriza la operación y la **Máquina** realiza la transacción. Entonces, el **Producto** es entregado al **Usuario** y la **Caja** calcula y devuelve el cambio si aplica. Finalmente, la **Pantalla** muestra un mensaje de agradecimiento o confirmación de la compra.
 
-### Resumen de colaboraciones
+#### Resumen de colaboraciones
 
 - **Usuario** → **Ranura**, **Pantalla**
 - **Ranura** → **Caja**
@@ -233,7 +232,7 @@ El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja*
 
 ---
 
-#### 18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. 
+### 18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. 
 
 
 ```java
@@ -267,7 +266,7 @@ public class Moneda {
 }
 ```
 
-### Atributos
+#### Atributos
 
 | Atributo           | Tipo    | Ejemplo        | Descripción                                           |
 |--------------------|---------|----------------|-------------------------------------------------------|
@@ -276,7 +275,7 @@ public class Moneda {
 | tipoCambio         | double  | 20.50          | Valor fluctuante respecto a moneda base               |
 | cantidadDisponible | int     | 150            | Stock físico en caja                                   |
 
-### Métodos
+#### Métodos
 
 **actualizarTipoCambio**  
 → Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
