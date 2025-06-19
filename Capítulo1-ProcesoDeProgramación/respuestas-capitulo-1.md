@@ -232,10 +232,10 @@ El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja*
 - **Pantalla** → **Usuario**
 
 ---
-   ```bash
 
 ### 18. Casa de Cambio - Clase Moneda, Definir la estructura de la clase `Moneda` para un programa que controle transacciones diarias en diferentes divisas. 
 ```
+```bash
 
 ```java
 public class Moneda {
@@ -268,7 +268,6 @@ public class Moneda {
 }
 ```
 
-```bash
 # Explicación de Atributos
 # -------------------------
 # | Atributo           | Tipo    | Ejemplo           | Descripción                                           |
