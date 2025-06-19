@@ -201,13 +201,96 @@ double temperaturaCPU;      // Decimal (ej: 65.3)
 ---
 
 
-
-
 #### **Problemas Prácticos**  
 17. Utilizando la metodología presentada, escribir un algoritmo para el funcionamiento de una caja de una máquina de refrescos.  
 
-18. **Casa de Cambio**:  
-   - Definir la estructura de la clase `Moneda` para un programa que controle transacciones diarias en diferentes divisas.  
+
+Para empezar necesitamos encontrar sustantivos que serviran para definir las clases, podríamos definir clases como Máquina, que representa toda la lógica del sistema; Caja, encargada del manejo de dinero; Refresco y Producto, que modelan lo que se vende; Usuario, que representa al cliente que interactúa con la máquina; Transacción, para registrar cada compra; Inventario, que controla las existencias; Pantalla y Botón, como interfaces físicas de interacción; Ranura, donde se inserta el dinero; Moneda y Billete, como tipos de dinero; Cambio, que modela el vuelto que se entrega; Mensaje, que comunica acciones al usuario; Opción y Selección, para representar elecciones del cliente; Precio, como parte del producto; Estado, que indica en qué parte del proceso está la máquina; Reembolso, por si se devuelve el dinero; y Error, para manejar situaciones inesperadas.
+
+
+Despues vamos a encontrar los verbos de la descripcion del problema, para empezar en el funcionamiento de la caja de una máquina de refrescos, el usuario puede introducir dinero en la ranura, y la máquina debe actualizar el saldo disponible. Luego puede mostrar las opciones disponibles para que el cliente haga una selección. La máquina debe verificar si el saldo es suficiente para cubrir el precio del producto. Si lo es, procede a realizar la transacción, entregar el refresco y devolver el cambio si aplica.
+
+los verbos que identifique fueron: introducir, actualizar, mostrar, hacer, verificar, es, realizar, entregar, devolver, aplica.
+
+Ahora para terminar hay que determinar la colaboración entre objetos mediante escenarios
+
+## Escenario: Compra exitosa de un refresco
+
+### Objetivo
+El usuario compra un refresco insertando dinero exacto y seleccionando el producto.
+
+### Colaboración entre objetos
+
+El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja**. La **Caja** actualiza el saldo interno y notifica el nuevo monto disponible a la **Pantalla**, que muestra las opciones de productos con sus precios. Luego, el **Usuario** hace una selección desde la **Pantalla** (o mediante un **Botón**). La **Máquina** recibe esa selección y consulta al **Inventario** si el producto está disponible, y a la **Caja** si el saldo es suficiente. Si todo es correcto, la **Caja** autoriza la operación y la **Máquina** realiza la transacción. Entonces, el **Producto** es entregado al **Usuario** y la **Caja** calcula y devuelve el cambio si aplica. Finalmente, la **Pantalla** muestra un mensaje de agradecimiento o confirmación de la compra.
+
+### Resumen de colaboraciones
+
+- **Usuario** → **Ranura**, **Pantalla**
+- **Ranura** → **Caja**
+- **Caja** → **Pantalla**, **Máquina**, **Transacción**
+- **Máquina** → **Inventario**, **Caja**, **Producto**, **Transacción**
+- **Pantalla** → **Usuario**
+
+---
+
+### 18. Casa de Cambio - Clase Moneda, Definir la estructura de la clase `Moneda` para un programa que controle transacciones diarias en diferentes divisas. 
+```
+
+```java
+public class Moneda {
+    // Atributos
+    final String codigo;      // Código ISO de la moneda (ej: "USD", "EUR")
+    final String nombre;      // Nombre completo (ej: "Dólar Estadounidense")
+    double tipoCambio;        // Valor de cambio respecto a la moneda base
+    int cantidadDisponible;   // Billetes/monedas físicos disponibles
+    
+    // Constructor
+    public Moneda(String codigo, String nombre, double tipoCambio, int cantidad) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.tipoCambio = tipoCambio;
+        this.cantidadDisponible = cantidad;
+    }
+    
+    // Métodos clave
+    public void actualizarTipoCambio(double nuevoCambio) {
+        this.tipoCambio = nuevoCambio;
+    }
+    
+    public void registrarTransaccion(int cantidadOperada) {
+        this.cantidadDisponible += cantidadOperada;
+    }
+    
+    public double convertir(double monto, Moneda destino) {
+        return monto * (this.tipoCambio / destino.tipoCambio);
+    }
+}
+```
+
+```bash
+# Explicación de Atributos
+# -------------------------
+# | Atributo           | Tipo    | Ejemplo           | Descripción                                           |
+# |--------------------|---------|-------------------|-------------------------------------------------------|
+# | codigo             | String  | "USD", "MXN"      | Identificador ISO de 3 letras - final porque no cambia|
+# | nombre             | String  | "Euro"            | Nombre descriptivo - final                           |
+# | tipoCambio         | double  | 20.50             | Valor fluctuante respecto a moneda base              |
+# | cantidadDisponible | int     | 150               | Stock físico en caja                                 |
+
+# Métodos Esenciales
+# ------------------
+
+# actualizarTipoCambio
+# Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
+
+# registrarTransaccion
+# Modifica el inventario al comprar/vender divisas:
+# cantidadOperada es positivo para depósitos, negativo para retiros.
+
+# convertir
+# Lógica para convertir un monto entre monedas según tipo de cambio.
+```
+
 
 19. **Juego de Dados**:  
    - Identificar una clase necesaria para el juego (ej. `Dado` o `Jugador`) y definir su estructura y comportamiento.  
