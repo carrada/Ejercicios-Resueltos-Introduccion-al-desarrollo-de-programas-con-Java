@@ -111,7 +111,7 @@ Se realiza desde que se empieza a escribir el código, siguiendo una cronología
 
 ### **16. ¿Definir estructura y comportamiento para objetos de las siguientes clases?**
 
----
+--
 
 #### **Clase Alumno**
 
