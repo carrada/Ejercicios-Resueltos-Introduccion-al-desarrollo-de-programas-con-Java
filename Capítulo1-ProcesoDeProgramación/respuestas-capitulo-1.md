@@ -233,9 +233,8 @@ El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja*
 
 ---
 
-### 18. Casa de Cambio - Clase Moneda, Definir la estructura de la clase `Moneda` para un programa que controle transacciones diarias en diferentes divisas. 
-```
-```bash
+#### **18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. **
+
 
 ```java
 public class Moneda {
@@ -268,8 +267,9 @@ public class Moneda {
 }
 ```
 
-# Explicación de Atributos
-# -------------------------
+```bash
+# Atributos
+# ----------
 # | Atributo           | Tipo    | Ejemplo           | Descripción                                           |
 # |--------------------|---------|-------------------|-------------------------------------------------------|
 # | codigo             | String  | "USD", "MXN"      | Identificador ISO de 3 letras - final porque no cambia|
@@ -277,19 +277,21 @@ public class Moneda {
 # | tipoCambio         | double  | 20.50             | Valor fluctuante respecto a moneda base              |
 # | cantidadDisponible | int     | 150               | Stock físico en caja                                 |
 
-# Métodos Esenciales
-# ------------------
+# Métodos
+# --------
 
 # actualizarTipoCambio
-# Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
+# → Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
 
 # registrarTransaccion
-# Modifica el inventario al comprar/vender divisas:
-# cantidadOperada es positivo para depósitos, negativo para retiros.
+# → Modifica el inventario al comprar/vender divisas.
+#   cantidadOperada es positivo para depósitos, negativo para retiros.
 
 # convertir
-# Lógica para convertir un monto entre monedas según tipo de cambio.
+# → Lógica para convertir un monto entre monedas según tipo de cambio.
 ```
+
+
 
 
 19. **Juego de Dados**:  
