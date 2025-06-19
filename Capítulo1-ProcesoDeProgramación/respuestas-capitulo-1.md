@@ -1,5 +1,6 @@
 ### Ejercicios del Capítulo 1  
 
+---
 
 #### **1. ¿Qué ventajas tiene hacer un diseño antes de codificar?**  
 **Respuesta:**  
@@ -99,17 +100,108 @@ Mediante **pruebas de escritorio**: simular la ejecución línea por línea con 
 - **Correctivo:** Corrige errores post-implementación.  
 - **Adaptativo:** Añade funcionalidades o ajusta el programa a nuevos requerimientos.  
 
+---
+
+### **15. ¿Cuál es el propósito de la documentación y en qué momento se hace?**
+
+El propósito de la documentación es llevar un seguimiento y un orden en el código, para que tanto el programador como otros usuarios puedan entenderlo perfectamente.  
+Se realiza desde que se empieza a escribir el código, siguiendo una cronología y un plan de acción.
+
+---
+
+### **16. ¿Definir estructura y comportamiento para objetos de las siguientes clases?**
+
+---
+
+#### **Clase Alumno**
+
+**Estructura (Atributos):**
+```java
+final int numeroDeCuenta;  // Entero único e inmutable (ej: 20230001)
+final String nombre;       // Cadena de caracteres (ej: "María López")
+double promedio;           // Decimal para cálculos dinámicos (ej: 8.5)
+```
+
+**Comportamiento (Métodos):**
+- `calcularPromedio()`: Actualiza el promedio basado en calificaciones.  
+- `mostrarDatos()`: Imprime nombre, número de cuenta y promedio.
+
+**Explicación:**
+- `numeroDeCuenta` y `nombre` son `final` porque son datos invariables.  
+- `promedio` es `double` para precisión en cálculos matemáticos.
+
+---
+
+#### **Clase Automóvil**
+
+**Estructura (Atributos):**
+```java
+double kilometraje;         // Decimal para registrar km exactos (ej: 15230.7)
+final String nombreModelo;  // Cadena inmutable (ej: "Toyota Corolla")
+double precio;              // Decimal para ajustes monetarios (ej: 250000.50)
+final String placa;         // Identificador único (ej: "ABC-1234")
+final int añoFabricacion;   // Entero inmutable (ej: 2020)
+```
+
+**Comportamiento (Métodos):**
+- `actualizarPrecio()`: Recalcula el precio según depreciación o mercado.  
+- `mostrarEspecificaciones()`: Muestra modelo, año y kilometraje.
+
+**Explicación:**
+- `kilometraje` y `precio` son `double` para manejar valores fraccionarios.  
+- `placa` es `String` porque puede incluir letras y guiones.
+
+---
+
+#### **Clase Cuenta Bancaria**
+
+**Estructura (Atributos):**
+```java
+final String numeroCuenta;  // Ej: "ES76 0123 4567 8901 2345 6789"
+String titular;             // Puede cambiar por traspaso
+double saldo;               // Decimal para transacciones (ej: 1500.75)
+```
+
+**Comportamiento (Métodos):**
+- `depositar(double monto)`: Aumenta el saldo.  
+- `retirar(double monto)`: Reduce el saldo (con validación).
+
+---
+
+#### **Clase Teléfono Celular**
+
+**Estructura (Atributos):**
+```java
+final String IMEI;          // Identificador único (ej: "490154203237518")
+String modelo;              // Ej: "iPhone 15"
+int almacenamientoGB;       // Entero (ej: 256)
+double bateriaPorcentaje;   // Decimal para precisión (ej: 87.5)
+```
+
+**Comportamiento (Métodos):**
+- `cargarBateria()`: Incrementa `bateriaPorcentaje`.  
+- `usarAplicacion()`: Reduce `bateriaPorcentaje`.
+
+---
+
+#### **Clase Computadora**
+
+**Estructura (Atributos):**
+```java
+final String serie;         // Ej: "MXK123456"
+String sistemaOperativo;    // Ej: "Windows 11"
+int ramGB;                  // Entero (ej: 16)
+double temperaturaCPU;      // Decimal (ej: 65.3)
+```
+
+**Comportamiento (Métodos):**
+- `ejecutarPrograma()`: Consume RAM y aumenta temperatura.  
+- `apagar()`: Reinicia atributos dinámicos.
+
+---
 
 
-15. ¿Cuál es el propósito de la documentación y en qué momento se hace?  
 
-#### **Diseño de Clases y Objetos**  
-16. Definir estructura y comportamiento para objetos de las siguientes clases:  
-   - Alumno  
-   - Automóvil  
-   - Cuenta bancaria  
-   - Teléfono celular  
-   - Computadora  
 
 #### **Problemas Prácticos**  
 17. Utilizando la metodología presentada, escribir un algoritmo para el funcionamiento de una caja de una máquina de refrescos.  
