@@ -233,7 +233,7 @@ El **Usuario** introduce dinero en la **Ranura**, la cual lo envía a la **Caja*
 
 ---
 
-#### **18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. **
+#### 18. ¿Cómo sería el diseño de una clase Moneda para una casa de cambio? Una casa de cambio requiere un programa para llevar control de sus transacciones diarias y así saber cuánto en billetes y monedas de cada divisa (dólares, dólares canadienses, pesos, euros, libras, coronas, etc.) tener cada día para cubrir la demanda. Como primer paso de la metodología de diseño, se deben identificar los objetos requeridos. Suponiendo que se necesita una clase Moneda, defina la estructura de dicha clase según el segundo paso de la metodología. 
 
 
 ```java
@@ -267,29 +267,27 @@ public class Moneda {
 }
 ```
 
-```bash
-# Atributos
-# ----------
-# | Atributo           | Tipo    | Ejemplo           | Descripción                                           |
-# |--------------------|---------|-------------------|-------------------------------------------------------|
-# | codigo             | String  | "USD", "MXN"      | Identificador ISO de 3 letras - final porque no cambia|
-# | nombre             | String  | "Euro"            | Nombre descriptivo - final                           |
-# | tipoCambio         | double  | 20.50             | Valor fluctuante respecto a moneda base              |
-# | cantidadDisponible | int     | 150               | Stock físico en caja                                 |
+### Atributos
 
-# Métodos
-# --------
+| Atributo           | Tipo    | Ejemplo        | Descripción                                           |
+|--------------------|---------|----------------|-------------------------------------------------------|
+| codigo             | String  | "USD", "MXN"   | Identificador ISO de 3 letras - final porque no cambia|
+| nombre             | String  | "Euro"         | Nombre descriptivo - final                            |
+| tipoCambio         | double  | 20.50          | Valor fluctuante respecto a moneda base               |
+| cantidadDisponible | int     | 150            | Stock físico en caja                                   |
 
-# actualizarTipoCambio
-# → Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
+### Métodos
 
-# registrarTransaccion
-# → Modifica el inventario al comprar/vender divisas.
-#   cantidadOperada es positivo para depósitos, negativo para retiros.
+**actualizarTipoCambio**  
+→ Actualiza el valor de conversión cuando hay fluctuaciones del mercado.
 
-# convertir
-# → Lógica para convertir un monto entre monedas según tipo de cambio.
-```
+**registrarTransaccion**  
+→ Modifica el inventario al comprar/vender divisas.  
+cantidadOperada es positivo para depósitos, negativo para retiros.
+
+**convertir**  
+→ Lógica para convertir un monto entre monedas según tipo de cambio.
+
 
 
 
