@@ -6,18 +6,6 @@ Este repositorio contiene soluciones y explicaciones a los ejercicios del libro 
 
 El contenido está organizado por capítulos. Cada carpeta contiene ejercicios resueltos, comentarios en el código y, cuando es necesario, explicaciones adicionales en archivos de texto o Markdown.
 
-📁 capitulo-01-introduccion
-📁 capitulo-02-tipos-datos-operadores
-📁 capitulo-03-estructuras-control
-📁 capitulo-04-metodos
-📁 capitulo-05-clases-objetos
-📁 capitulo-06-arreglos
-📁 capitulo-07-herencia
-📁 capitulo-08-polimorfismo
-📁 capitulo-09-interfaz-grafica
-📁 capitulo-10-excepciones-archivos
-
-
 > 📝 Nota: Algunos nombres de carpeta pueden variar según los temas abordados en la edición utilizada.
 
 ## 🚀 ¿Qué incluye cada ejercicio?
@@ -44,8 +32,8 @@ Este proyecto está pensado para:
 📌 En desarrollo capítulo por capítulo.
 
 - [x] Capítulo 1
-- [] Capítulo 2
-- [] Capítulo 3
+- [x] Capítulo 2
+- [ ] Capítulo 3
 - [ ] Capítulo 4
 - [ ] Capítulo 5
 - [ ] ...

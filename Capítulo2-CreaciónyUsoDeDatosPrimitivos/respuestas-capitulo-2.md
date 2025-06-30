@@ -2,19 +2,29 @@
 
 ### **1. ¿Cuántos tipos de datos hay para representar números enteros? ¿En qué difieren?**
 
+Hay 8 tipos de datos que son: byte, short, int, long, float, double, char, boolean y difieren en el espacio en la memoria que ocupa cada uno, por ejemplo, byte es un entero de 8 bits y se diferencia del tipo short porque este tiene 16 bits
 
 ### **2. ¿Cuál es el objetivo de una declaración?**
 
+el objetivo es que el compilador reserve un espacio para cada uno de los datos y para que se puedan manipular en el programa
 
 ### **3. Si se tiene la declaración `final int UNO = 1;` ¿es posible tener la siguiente instrucción `int negativo = -UNO;`?**
 
+No, no es posible porque al declarar final quiere decir que no es una variable, es una constante, es decir, su valor no puede cambiar, al declarar int negativo = -UNO; va a dar error porque una constante final no se puede manipular
+
 
 ### **4. Indicar tres formas distintas de incrementar en 1 el valor de una variable.**
+
+- `x = x + 1;`
+- `x += 1;`
+- `x++;`
 
 
 ### **5. ¿Es correcta la siguiente línea de código? ¿Por qué?**  
    `int posición // Indica la posición del objeto ;`
 
+No es correcta porque le falta el punto y coma (`;`) al final de la instrucción. El punto y coma es necesario para que compile correctamente. La forma correcta sería:  
+`int posición;`
 
 ### **6. ¿Existe alguna diferencia entre tener `bancario` y `"bancario"`?**
 
