@@ -95,7 +95,7 @@ Es decir, el cociente por el divisor más el residuo da como resultado el númer
 
 ### **12. ¿Qué valor tiene `complejo` después de ejecutar?**
     ```java
-    final int FACTOR = 10;
+    final int FACTOR = 10; 
     int a = 1;
     int b = 2;
     int complejo = a + b * 3 - a * b + 3;
@@ -115,25 +115,31 @@ Es decir, el cociente por el divisor más el residuo da como resultado el númer
     c = 100 y d = 64
 
 ### **14. Para convertir un valor `val` entre 0-10 a 0-100, ¿cuál instrucción es correcta?**
-    - `double calculado = (val /10) * 100;`
+    - `double calculado = (val /10) * 100;` 
     - `double calculado = (val /100) * 10;`
 
+La instrucción correcta es double calculado = (val /10) * 100;
 
 ### **15. Escribir en Java:**
-    - a) $a^3(a + 1)(a - 7)$
-    - b) $\frac{1}{1+x^2}$
-    - c) $q = \left( \frac{t_1 \times t_2}{d - k} \right) + t_2$
+    - a) $a^3(a + 1)(a - 7)$ | double resultado = a * a * a * (a + 1) * (a - 7);
+    - b) $\frac{1}{1+x^2}$   | double x = 1 / (1+(x*x))
+    - c) $q = \left( \frac{t_1 \times t_2}{d - k} \right) + t_2$  | double q = ((t1*t2)/(d-k)) + t2
+
+
 
 
 ### **16. Definir constantes/variables para:**
-    - a) Lado de cuadrado (4.5m)
-    - b) Cien metros
-    - c) Número de llantas de bicicleta
-    - d) Número primo
-    - e) Raíz cuadrada de 2
-    - f) Signo de interrogación
-    - g) Área de un cuadrado
+    - a) Lado de cuadrado (4.5m) | double ladoCuadrado = 4.5;
+    - b) Cien metros | int metros = 100;
+    - c) Número de llantas de bicicleta | int llantasBici = 2;
+    - d) Número primo | int final primo = 23
+    - e) Raíz cuadrada de 2 | double raizCuadrada2 = (2^{1/2})
+    - f) Signo de interrogación | string signoInterrogacion = "?"
+    - g) Área de un cuadrado | double areaCuadrado = (ladoCuadrado*ladoCuadrado)
 
 
 ### **17. Expresión para calcular costo de gasolina ($7.50/litro) por `n` litros.**
+
+int n = litrosConsumidos;
+double total = (n*7.50);
 
