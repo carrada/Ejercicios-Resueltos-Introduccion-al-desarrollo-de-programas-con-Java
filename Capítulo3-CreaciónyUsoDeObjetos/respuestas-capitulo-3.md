@@ -116,3 +116,15 @@ Apt. #645 N.Y.
 USA.
 
 el programa se encuentra en el archivo Cartas.java
+
+### **9. Escribir un programa que modele un psiquiatra. El programa debe preguntar al usuario, que tomará el papel de paciente, cuál es su problema. Con la respuesta debe preguntar por qué y después de su respuesta decir "Muy interesante, hablaremos de ello con más detalle en la siguiente sesión". Por ejemplo:**
+
+¿Cómo se encuentra?
+Estoy deprimido.
+¿Por qué dice 'estoy deprimido'?
+No dije que usted estuviera deprimido; dije que yo estoy deprimido.
+Muy interesante, hablaremos de ello con más detalle en la siguiente
+sesión.
+
+
+El programa se encuentra en Psiquiatra.java
