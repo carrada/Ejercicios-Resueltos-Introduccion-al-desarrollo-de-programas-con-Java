@@ -132,3 +132,9 @@ El programa se encuentra en Psiquiatra.java
 ### **10. Escribir un programa para obtener el RFC de una persona. El RFC se obtiene tomando las dos primeras letras del apellido paterno, la inicial del apellido materno y la inicial del nombre, seguido de los dos dígitos finales del año de nacimiento, los dos dígitos del mes de nacimiento y dos dígitos para el día de nacimiento. Por ejemplo, si la persona se llama Andrea López López y nació el 14-04-1992, su RFC es lola920414.**
 
 El programa se encuentra en RFC.java
+
+
+
+### **11.  Escribir un programa para que jueguen disparejos entre tres jugadores; uno de ellos es la computadora. El juego consiste en que cada jugador lanza su moneda al aire y gana el jugador cuya cara visible de la moneda sea distinta de la cara visible de cada una de las otras dos monedas.**
+
+El programa se encuentra en Disparejos.java
