@@ -138,3 +138,7 @@ El programa se encuentra en RFC.java
 ### **11.  Escribir un programa para que jueguen disparejos entre tres jugadores; uno de ellos es la computadora. El juego consiste en que cada jugador lanza su moneda al aire y gana el jugador cuya cara visible de la moneda sea distinta de la cara visible de cada una de las otras dos monedas.**
 
 El programa se encuentra en Disparejos.java
+
+### **14. Escribir un programa que juegue dados con las siguientes reglas: se tiran dos dados y se suma el valor de la cara superior de cada uno. Si la suma es 7 u 11 el jugador gana. Si la suma es 2, 3 o 12 el jugador pierde. Si la suma es 4, 5, 6, 8, 9 o 10, ´esta se convierte en los puntos del jugador quien, para ganar, debe volver a tirar los dados y que la suma de esta tirada sea igual a la anterior o bien igual a 7, en otro caso pierde.**
+
+El programa esta en Dados.java
